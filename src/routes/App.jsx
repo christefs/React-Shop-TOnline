@@ -8,6 +8,10 @@ import NotFound from '../pages/NotFound';
 import NewPassword from '../pages/NewPassword';
 import EmailSent from '../pages/EmailSent';
 import Login1 from '../pages/Login1';
+import CreateAccount from '../pages/CreateAccount';
+
+import NewPasswPlatzi from '../pages/NewPasswPlatzi';
+
 import '../styles/global.css';
 
 const App = () => {
@@ -28,6 +32,9 @@ const App = () => {
                     <Route exact path="/new-password" element={<NewPassword />} />
                     <Route exact path="/email-sent" element={<EmailSent />} />
                     <Route exact path="/login-user" element={<Login1 />} />
+                    <Route exact path="/create-account" element={<CreateAccount />} />
+
+                    <Route exact path="/new-passw-platzi" element={<NewPasswPlatzi />} />
                     <Route path="*" element={<NotFound />} />
                     
 

@@ -7,8 +7,8 @@ import '../styles/Login1.scss';
 
 const Login1 = () => {
     return (
-        <div className="login">
-            <div className="form-container">
+        <div className="Login1">
+            <div className="Login1-container">
             <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
 
             <form action="/" className="form">
