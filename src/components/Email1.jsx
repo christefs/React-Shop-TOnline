@@ -1,9 +1,8 @@
 import React from 'react';
-import '../styles/Email1.scss';
 
 const Email1 = () => {
     return (
-        <input type="text" id="email" placeholder="platzi@example.cm" className="input input-email" />
+        <input type="text" id="email" placeholder="platzi@example.com" className="login1-input login1-input-email Account-input Account-input-email" />
 
     );
 }

@@ -1,9 +1,8 @@
 import React from 'react';
-import '../styles/LabelMail.scss';
 
 const LabelMail = () => {
     return (
-        <label for="email" className="label">Email address</label>
+        <label for="email" className="login1-label Account-label MyAccount-label">Email address</label>
 
     );
 }

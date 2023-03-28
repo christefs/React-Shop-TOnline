@@ -1,10 +1,9 @@
 import React from 'react';
-import '../styles/LabelPass.scss';
 
 const LabelPass = () => {
     return (
 
-        <label for="password" className="label">Password</label>
+        <label for="password" className="NewPassword-label login1-label Account-label MyAccount-label">Password</label>
 
     );
 }

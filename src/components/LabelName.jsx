@@ -1,9 +1,8 @@
 import React from 'react';
-import '../styles/LabelName.scss';
 
 const LabelName = () => {
     return (
-        <label for="name" class="label">Name</label>
+        <label for="name" className="Account-label MyAccount-label">Name</label>
 
     );
 }
