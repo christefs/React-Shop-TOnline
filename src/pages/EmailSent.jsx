@@ -1,5 +1,8 @@
 import React from 'react';
-import '../styles/EmailSent.scss';
+//import '../styles/EmailSent.scss';
+import '@styles/EmailSent.scss';
+
+import email from '@icons/email.svg';
 
 const EmailSent = () => {
     return (
@@ -11,7 +14,7 @@ const EmailSent = () => {
             <p className="subtitle">Please check your inbox for instructions on how to reset the password</p>
 
             <div className="email-image">
-                <img src="./icons/email.svg" alt="email" />
+                <img src={email} alt="email" />
             </div>
 
             <button className="primary-button login-button">Login</button>

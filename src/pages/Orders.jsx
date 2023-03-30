@@ -1,7 +1,12 @@
 import React from 'react';
-import OrderOverview from '../components/OrderOverview';
-import Price1 from '../components/Price1';
-import '../styles/Orders.scss';
+//import OrderOverview from '../components/OrderOverview';
+//import Price1 from '../components/Price1';
+//import '../styles/Orders.scss';
+import OrderOverview from '@components/OrderOverview';
+import Price1 from '@components/Price1';
+import '@styles/Orders.scss';
+
+import flechita from '@icons/flechita.svg';
 
 const Orders = () => {
     return (
@@ -13,25 +18,25 @@ const Orders = () => {
                     <div className="orders">
                     <OrderOverview />
                     <Price1 />
-                    <img src="./icons/flechita.svg" alt="arrow" />
+                    <img src={flechita} alt="arrow" />
                     </div>
 
                     <div className="orders">
                     <OrderOverview />
                     <Price1 />
-                    <img src="./icons/flechita.svg" alt="arrow" />
+                    <img src={flechita} alt="arrow" />
                     </div>
 
                     <div className="orders">
                     <OrderOverview />
                     <Price1 />
-                    <img src="./icons/flechita.svg" alt="arrow" />
+                    <img src={flechita} alt="arrow" />
                     </div>
 
                     <div className="orders">
                     <OrderOverview />
                     <Price1 />
-                    <img src="./icons/flechita.svg" alt="arrow" />
+                    <img src={flechita} alt="arrow" />
                     </div>
                 </div>
             </div>
