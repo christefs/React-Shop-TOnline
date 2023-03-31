@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Email1 from '../components/Email1';
 import LabelMail from '../components/LabelMail';
 import LabelPass from '../components/LabelPass';
@@ -6,20 +6,33 @@ import Password from '../components/Password';
 import '../styles/Login1.scss';
 
 const Login1 = () => {
+
+    const form = useRef(null);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const formData = new FormData(form.current);
+        const data = {
+            username: formData.get('email'),
+            password: formData.get('password')
+        }
+        console.log(data);
+    }
+
     return (
         <div className="Login1">
             <div className="Login1-container">
             <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
 
-            <form action="/" className="form">
+            <form action="/" className="form" ref={form}>
                 
                 <LabelMail />
-                <Email1 />
+                <Email1 name={Email1.name} />
 
                 <LabelPass />
-                <Password />
+                <Password name={Password.name} />
 
-                <input type="submit" value="Log in" className="primary-button login-button" />
+                <button onClick={handleSubmit} className="primary-button login-button" >Log in </button>
                 <a href="/">Forgot my password</a>
             </form>
 

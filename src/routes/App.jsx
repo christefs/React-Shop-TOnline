@@ -11,17 +11,16 @@ import MyAccount from '../pages/MyAccount';
 import Checkout from '../pages/Checkout';
 import Orders from '../pages/Orders';
 
+import AppContext from '../context/AppContext';
+import useInitialState from '../hooks/useInitialState';
+
 import '../styles/global.css';
 
 const App = () => {
+    const initialState = useInitialState();
     return (
-        //<h1>Hola mundo, bienvenidos al curso práctico de React!</h1>
-/*        
-        <Layout>
-            <Login />
-            <RecoveryPassword />
-        </Layout>
-*/
+        <AppContext.Provider value={initialState}>
+        
         <BrowserRouter>
             <Layout>
                 <Routes>
@@ -41,6 +40,7 @@ const App = () => {
                 </Routes>
             </Layout>        
         </BrowserRouter>
+        </AppContext.Provider>
     );
 }
 

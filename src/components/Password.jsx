@@ -4,7 +4,7 @@ const Password = () => {
     return(
         
             
-        <input type="password" id="password" placeholder="*********" className="NPass-input NPass-input-password login1-input Account-input Account-input-password MyAccount-value"></input>
+        <input type="password" name="password" placeholder="*********" className="NPass-input NPass-input-password login1-input Account-input Account-input-password MyAccount-value"></input>
         
     );
 }
