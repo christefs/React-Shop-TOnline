@@ -9,13 +9,19 @@ import Price2Item from '@components/Price2Item';
 import flechita from '@icons/flechita.svg';
 import closing from '@icons/icon_close.png';
 
-const MyOrder = () => {
+const MyOrder = ({ product }) => {
     const { state } = useContext(AppContext);
 
     const sumTotal = () => {
         const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
         const sum = state.cart.reduce(reducer, 0);
         return sum;
+    }
+
+    const { removeFromCart } = useContext(AppContext);
+
+    const handleRemove = product => {
+        removeFromCart(product);
     }
 
     return (
@@ -31,7 +37,7 @@ const MyOrder = () => {
                         <ImageItem product={product} key={`orderItem-${product.id}`} />
                         <DescripItem product={product} key={`orderItem-${product.id}`} />
                         <Price2Item product={product} key={`orderItem-${product.id}`} />
-                        <img src={closing} alt="close" />
+                        <img src={closing} alt="close" onClick={() => handleRemove(product)} />
                     </div>
                 ))}
                 
