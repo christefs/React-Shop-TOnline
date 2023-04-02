@@ -11,6 +11,8 @@ import MyAccount from '../pages/MyAccount';
 import Checkout from '../pages/Checkout';
 import Orders from '../pages/Orders';
 
+import MyOrder from '../containers/MyOrder';
+
 import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
 
@@ -33,6 +35,8 @@ const App = () => {
                     <Route exact path="/my-account" element={<MyAccount />} />
                     <Route exact path="/checkout" element={<Checkout />} />
                     <Route exact path="/orders" element={<Orders />} />
+
+                    <Route exact path="/my-order" element={<MyOrder />} />
 
                     <Route path="*" element={<NotFound />} />
                     

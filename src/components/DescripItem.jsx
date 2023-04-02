@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-const DescripItem = () => {
+import AppContext from '../context/AppContext';
+
+const DescripItem = ({ product }) => {
     return (
         
-        <p>Bike</p>
+        <p>{product.title}</p>
         
     );
 }
