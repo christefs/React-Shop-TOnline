@@ -5,6 +5,14 @@ nav {
     justify-content: space-between;
     padding: 0 24px;
     border-bottom: 1px solid var(--very-light-pink);
+
+//  Implementación:
+    width: 97%;
+    top: 0;
+    position: fixed;
+    grid-template-columns: 1fr auto;
+    background: white;
+    
   }
   .menu {
     display: none;
@@ -20,10 +28,16 @@ nav {
     display: flex;
     align-items: center;
     height: 60px;
+
+    //gap: 2em;
   }
+  
   .navbar-left {
     display: flex;
+
   }
+
+
   .navbar-left ul {
     margin-left: 12px;
   }

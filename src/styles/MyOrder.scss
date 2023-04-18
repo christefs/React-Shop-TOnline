@@ -7,15 +7,32 @@
     position: absolute;
     right: 0;
     //Nuevos
-    background-color: white;
+    background: white;
     top: 60px;
     bottom: 0;
     border-radius: 6px;
     border: 1px solid var(--very-light-pink);
+
   }
   .MyOrder-title-container {
     display: flex;
+
+    background: white;
+    margin: 0;
+    padding: 0;
   }
+
+  .MyOrder-Container1{
+    background: white;
+    
+  }
+
+  .MyOrder-content {
+    background: white;
+    margin: 0;
+    padding: 0;
+  }
+
   .MyOrder-title-container img {
     transform: rotate(180deg);
     margin-right: 14px;

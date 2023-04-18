@@ -21,10 +21,14 @@ const useInitialState = () => {
         });
     }
 
+    //implementación:
+    
+
     return {
         state,
         addToCart,
         removeFromCart
+
     }
 }
 
