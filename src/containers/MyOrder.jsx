@@ -41,7 +41,7 @@ const MyOrder = ({ product }) => {
        
             <aside className="MyOrder-detail">
 
-                <div className='MyOrder-Container1'>
+                
                           
                     <div className="MyOrder-title-container">
                     
@@ -72,10 +72,12 @@ const MyOrder = ({ product }) => {
                         <button className="MyOrder-primary-button">
                             Checkout
                         </button>
+
+                        
                     </div>
 
                     
-                    </div>          
+                             
             </aside>
 
 
